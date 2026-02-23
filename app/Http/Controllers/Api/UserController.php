@@ -34,7 +34,7 @@ class UserController extends Controller
                 return [
                     'id' => $wallet->id,
                     'name' => $wallet->name,
-                    'balance' => $wallet->balance
+                    'balance' => $wallet->getBalance(),
                 ];
             }),
             'total_balance' => $user->getTotalBalance()
